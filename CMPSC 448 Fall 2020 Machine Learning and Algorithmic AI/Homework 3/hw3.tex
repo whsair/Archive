@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage[top=2cm,bottom=2.5cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+
+%% Sets page size and margins
+
+\usepackage{float}
+%% Useful packages
+% \usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% \DeclareGraphicsExtensions{.pdf,.jpg,.png}
+
+\newtheoremstyle{quest}{\topsep}{\topsep}{}{}{\bfseries}{}{ }{\thmname{#1}\thmnote{ #3}.}
+\theoremstyle{quest}
+\newtheorem*{problem}{Problem}
+\newenvironment{solution}
+  {\begin{proof}[Solution]}
+  {\end{proof}}
+
+%% defined colors
+\definecolor{Blue}{rgb}{0,0,0.5}
+\definecolor{Green}{rgb}{0,0.75,0.0}
+\definecolor{LightGray}{rgb}{0.6,0.6,0.6}
+\definecolor{DarkGray}{rgb}{0.3,0.3,0.3}
+
+\title{CMPSC 448: Machine Learning and AI \\ Homework 3}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instruction}
+This HW only includes theory problems. Please note, You need to submit a report in PDF including the solution of problems.
+
+\section*{Logistic Regression}
+\begin{problem}[1] [30 points]
+Consider a binary training data $\mathcal{S} = \{(\bm{x}_{1}, y_1),(\bm{x}_{2}, y_2),\dots,(\bm{x}_{n}, y_n)\}$ where the feature vectors are $\bm{x}_{i} \in \mathbb{R}^{d} $ and $y_i \in \{0, 1\}, i=1,2,\dots,n$. Note that in the lectures we assumed $y_i \in \{-1, +1\}$.
+
+\begin{enumerate}
+    \item Show that
+    \begin{equation}
+        \mathbb{P}[y|\bm{x};\bm{w}] = \mathbb{P}[y=1|\bm{x};\bm{w}]^{y} \cdot \mathbb{P}[y=0|\bm{x};\bm{w}]^{(1-y)}
+    \end{equation}
+    \item Following the derivation of logistic regression in lectures, derive the log-likelihood for the training data when the label of each training example is set to be $y_i \in \{0, 1\}$ and sigmoid function is used to covert the linear predictions to probabilities.
+    \item Then, write down the gradient descent (GD) for obtained optimization problem and discuss the contribution of each training example to updated solution in every iteration of GD. In particular, compare the contribution of a misclassified example with the contribution of a correctly classified example to the gradient.
+\end{enumerate}
+
+\end{problem}
+
+\section*{Decision Trees}
+\begin{problem}[2] [30 points]
+In this problem, you will investigate building a decision tree for a binary classification problem. The training data is given in Table~\ref{tab:dt_instance} with 16 instances that will be used to learn a decision tree for predicting whether a mushroom is edible or not based on its attributes (\textsf{Color}, \textsf{Size}, and \textsf{Shape}). Please note the label set is a binary set \textsf{\{Yes, No\}}.
+
+\begin{table}[t!]
+\centering
+\resizebox{.5\textwidth}{!}{%
+\rowcolors{1}{}{lightgray}
+\begin{tabular}{lllll}
+\hline
+Instance & Color & Size & Shape & Edible \\ \hline
+D1  & Yellow & Small & Round     &  Yes  \\
+D2  & Yellow & Small & Round     &  No   \\
+D3  & Green  & Small & Irregular &  Yes  \\
+D4  & Green  & Large & Irregular &  No   \\
+D5  & Yellow & Large & Round     &  Yes  \\
+D6  & Yellow & Small & Round     &  Yes  \\
+D7  & Yellow & Small & Round     &  Yes  \\
+D8  & Yellow & Small & Round     &  Yes  \\
+D9  & Green  & Small & Round     &  No   \\
+D10 & Yellow & Large & Round     &  No   \\
+D11 & Yellow & Large & Round     &  Yes  \\
+D12 & Yellow & Large & Round     &  No   \\
+D13 & Yellow & Large & Round     &  No   \\
+D14 & Yellow & Large & Round     &  No   \\
+D15 & Yellow & Small & Irregular &  Yes  \\
+D16 & Yellow & Large & Irregular &  Yes  \\ \hline
+\end{tabular}%
+}
+\caption{Mushroom data with 16 instances, three categorical features, and binary labels.}
+\label{tab:dt_instance}
+\end{table}
+
+\begin{enumerate}
+    \item Which attribute would the algorithm choose to use for the root of the tree. Show the details of your calculations. Recall from lectures that if we let $\mathcal{S}$ denote the data set at current node, $A$ denote the feature with values $v \in \mathcal{V}$, $H$ denote the entropy function, and $\mathcal{S}_v$ denote the subset of $\mathcal{S}$ for which the feature $A$ has the value $v$, the gain of a split along the feature $A$, denoted $\textsf{InfoGain}(S, A)$ is computed as:
+    $$\text{InfoGain}(\mathcal{S}, A) = H(\mathcal{S}) - \sum_{v \in \mathcal{V}}\left(\frac{\lvert\mathcal{S}_v\rvert}{\lvert\mathcal{S}\rvert}\right)H(\mathcal{S}_v)$$
+    That is, we are taking the difference of the entropy before the split, and subtracting off the entropies of each new node after splitting, with an appropriate weight depending on the size of each node.
+    \item Draw the full decision tree that would be learned for this data (assume no pruning and you stop splitting a leaf node when all samples in the node belong to the same class, i.e., there is no information gain in splitting the node).
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}[3] [10 points]
+Handling real valued (numerical) features is totally different from categorical features in splitting nodes. This problem intends to discuss a simple way to decide good thresholds for splitting based on numerical features. Specifically, when there is a numerical feature in data, an option would be treating all numeric values of feature as discrete, i.e., proceeding exactly as we do with categorical data. What problems may arise when we use a tree derived this way to classify an unseen example?
+\end{problem}
+
+
+\section*{Support Vector Machines}
+\begin{problem}[4] [30 points]
+Consider a data set with three data points in $\mathbb{R}^2$
+\begin{equation*}
+\bm{X} = \begin{bmatrix}
+0 & 0  \\
+0 & -1 \\
+-2 & 0
+\end{bmatrix},
+\bm{y} = \begin{bmatrix}
+-1\\
+-1\\
++1
+\end{bmatrix}    
+\end{equation*}
+
+Manually solve the following optimization problem for hard-margin SVM stated as
+\begin{equation*}
+\begin{aligned}
+\min_{\bm{w},b} \quad & \frac{1}{2}\lVert \bm{w} \rVert_{2}^{2}\\
+\textrm{s.t.}   \quad & y_i(\bm{w}^{\top}\bm{x}_i+b)\geq 1, i=1,2,\dots,n\\
+\end{aligned}
+\end{equation*}
+
+to get the optimal hyperplane $(\bm{w}_{\ast}, b_{\ast})$ and its margin
+\end{problem}
+
+\end{document}

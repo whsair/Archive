@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+\usepackage[top=2cm,bottom=2.5cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}
+\usepackage{minted}
+
+%% Sets page size and margins
+
+\usepackage{float}
+%% Useful packages
+% \usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm,bm}
+% \usepackage[thmmarks, amsmath, thref]{ntheorem}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% \DeclareGraphicsExtensions{.pdf,.jpg,.png}
+
+\newtheoremstyle{quest}{\topsep}{\topsep}{}{}{\bfseries}{}{ }{\thmname{#1}\thmnote{ #3}.}
+\theoremstyle{quest}
+\newtheorem*{problem}{Problem}
+\newenvironment{solution}
+  {\begin{proof}[Solution]}
+  {\end{proof}}
+
+%% defined colors
+\definecolor{Blue}{rgb}{0,0,0.5}
+\definecolor{Green}{rgb}{0,0.75,0.0}
+\definecolor{LightGray}{rgb}{0.6,0.6,0.6}
+\definecolor{DarkGray}{rgb}{0.3,0.3,0.3}
+
+\title{CMPSC 448: Machine Learning and AI \\ Homework 1}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\section*{Instruction}
+This HW includes both theory and coding problems. Please note that:
+\begin{itemize}
+    \item You cannot look at anyone else's code
+    \item Your code must work with Python 3.7 (you may install the Anaconda distribution of Python)
+    \item You need to submit a report including solutions of theory problems (in PDF format), and a \textsf{Jupyter} notebook.
+\end{itemize}
+
+\section*{Linear Algebra and Calculus}
+\begin{problem}[1] [10 points]
+What is the rank of the following matrix? Justify your answer.
+\begin{equation*}
+    \bm{X} = \begin{bmatrix}
+    1 & 2 & 1\\
+    1 & 0 & 3\\
+    1 & 1 & 2
+    \end{bmatrix} 
+\end{equation*}
+\end{problem}
+
+\begin{problem}[2]
+[10 points] Use either \textsf{numpy.linalg} or \textsf{scipy.linalg} to find the eigendecomposition of the following matrix:
+
+\begin{equation*}
+\bm{X} = \begin{bmatrix}
+3 & 1 & 1\\
+2 & 4 & 2\\
+-1 & -1 & 1
+\end{bmatrix}   
+\end{equation*}
+
+Then, can you reconstruct the original matrix $\bm{X}$ from obtained eigenvalues and eigenvectors? Do you see any difference between original and reconstructed matrix? Can you Justify?
+\end{problem}
+
+\begin{problem}[3] [20 points]
+First, compute the derivative $f^{\prime}(z) = \frac{df(z)}{dz}$ of the scalar function $$f(z) = \ln(1+e^{-2z})$$
+Then, using the chain rule, what is the gradient $\nabla_{\bm{w}}g(\bm{w})$ of the scalar valued function $$g(\bm{w})=f(\bm{w}^{\top}\bm{x}) = \ln(1+e^{-2\bm{w}^{\top}\bm{x}})$$
+\end{problem}
+
+\begin{problem}[4]
+[20 points] Let $\bm{x} \in \mathbb{R}^{d}$ be a vector in a $d$ dimensional space and define the scalar valued function of $d$ dimensional vectors $f: \mathbb{R}^{d} \rightarrow \mathbb{R}$ by
+\begin{equation}
+  f(\bm{x}) = \frac{1}{2}\bm{x}^{\top}\bm{A}\bm{x} + \bm{b}^{\top}\bm{x}
+\end{equation}
+where $\bm{A} \in \mathbb{R}^{d \times d}$ is a fixed symmetric matrix and $\bm{b} \in \mathbb{R}^{d}$ is a fixed vector. Using the definition of gradient show that
+\begin{equation}
+  \nabla f(\bm{x}) = \bm{A}\bm{x} + \bm{b}
+\end{equation}
+\end{problem}
+
+\section*{Exploratory Data Analysis with \textsf{pandas}}
+\begin{problem}[5]
+[40 points] As it has been emphasized in the lectures, we need to have a good understanding of data before training a machine learning model. In this assignment, you are asked to analyze the UCI Adult data set. The Adult data set is a standard machine learning data set that contains demographic information about the US residents. This data was extracted from the census bureau database. The data set contains 32561 instances and 15 features (please check the notebook for possible values of each feature) with different types (categorical and continuous).
+
+The data is provided as a \textsf{csv} file and can be loaded into \textsf{panda}'s \textsf{DataFrame} object as shown below:
+\\\\
+\textsf{data = pd.read\_csv(`adult.data.csv')}
+\\\\
+You are asked to answer following questions about this data set:
+\begin{enumerate}
+    \item How many men and women (sex feature) are represented in this data set?
+    \item What is the average age (age feature) of women?
+    \item What is the percentage of German citizens (native-country feature)?
+    \item What are the mean and standard deviation of age for those who earn more than 50K per year (salary feature) and those who earn less than 50K per year?
+    \item Is it true that people who earn more than 50K have at least high school education? (education – Bachelors, Prof-school, Assoc-acdm, Assoc-voc, Masters or Doctorate feature)
+    \item Display age statistics for each race (race feature) and each gender (sex feature).
+    \item What is the maximum number of hours a person works per week (hours-per-week feature)? How many people work such a number of hours, and what is the percentage of those who earn a lot ($>$50K) among them?
+    \item Count the average time of work (hours-per-week) for those who earn a little and a lot (salary) for each country (native-country). What will these be for Japan?
+\end{enumerate}
+
+To answer these questions, you are provided with a \textsf{Jupyter} notebook with questions. Please complete the notebook with your code that answers the questions. You are encouraged to install \textsf{Anaconda} distribution of Python to run the \textsf{Jupyter} notebook to accomplish this task.
+
+\end{problem}
+
+\section*{Deliverable}
+This homework comes with a comma separated csv data file \textsf{adult.data.csv}, and a \textsf{Jupyter} notebook with questions. You are asked to submit a PDF file including the answers for first four questions and the completed notebook for the fifth problem. Make sure your code is running and include enough details about your code.
+
+\end{document}

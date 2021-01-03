@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+\usepackage[top=2cm,bottom=2.5cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+\usepackage{minted}
+
+%% Sets page size and margins
+
+\usepackage{float}
+%% Useful packages
+% \usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm,bm,bbm}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% \DeclareGraphicsExtensions{.pdf,.jpg,.png}
+
+\newtheoremstyle{quest}{\topsep}{\topsep}{}{}{\bfseries}{}{ }{\thmname{#1}\thmnote{ #3}.}
+\theoremstyle{quest}
+\newtheorem*{problem}{Problem}
+\newenvironment{solution}
+  {\begin{proof}[Solution]}
+  {\end{proof}}
+
+%% defined colors
+\definecolor{Blue}{rgb}{0,0,0.5}
+\definecolor{Green}{rgb}{0,0.75,0.0}
+\definecolor{LightGray}{rgb}{0.6,0.6,0.6}
+\definecolor{DarkGray}{rgb}{0.3,0.3,0.3}
+
+\title{CMPSC 448: Machine Learning and AI \\ Homework 4}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\section*{Instruction}
+This HW includes both theory and implementation problems. Please note,
+\begin{itemize}
+    \item Your code must work with Python 3.7+
+    \item You need to submit a report in PDF including all written deliverable and plots, and all implementation codes so one could regenerate your results.
+    \item For non-linear classifier problem, you need to submit a Jupyter notebook for each algorithm and all complementary python codes so one could \textbf{reproduce} your results. Submit your code in \textsf{Problem2*.py} and replace * with the name of classifier.
+    \item For clustering problem, you are \textbf{NOT} allowed to use the implementation from \textsf{scikit-learn} or import it and should submit your own implementation. Submit your code in \textsf{Problem3.py}.
+\end{itemize}
+
+\section*{Boosting}
+
+\begin{problem}[1] [20 points] Consider the AdaBoost algorithm we discussed in the class. AdaBoost is an example of ensemble classifiers where the weights in next round are decided based on the training error of the weak classifier learned on the current weighted training set. We wish to run the AdaBoost on the dataset provided in Table~\ref{tab:adaboost}.
+
+\begin{table}[t!]
+\centering
+\resizebox{.5\textwidth}{!}{%
+\rowcolors{1}{}{lightgray}
+\begin{tabular}{lllll}
+\hline
+Instance & Color & Size & Shape & Edible \\ \hline
+D1  & Yellow & Small & Round     &  Yes  \\
+D2  & Yellow & Small & Round     &  No   \\
+D3  & Green  & Small & Irregular &  Yes  \\
+D4  & Green  & Large & Irregular &  No   \\
+D5  & Yellow & Large & Round     &  Yes  \\
+D6  & Yellow & Small & Round     &  Yes  \\
+D7  & Yellow & Small & Round     &  Yes  \\
+D8  & Yellow & Small & Round     &  Yes  \\
+D9  & Green  & Small & Round     &  No   \\
+D10 & Yellow & Large & Round     &  No   \\
+D11 & Yellow & Large & Round     &  Yes  \\
+D12 & Yellow & Large & Round     &  No   \\
+D13 & Yellow & Large & Round     &  No   \\
+D14 & Yellow & Large & Round     &  No   \\
+D15 & Yellow & Small & Irregular &  Yes  \\
+D16 & Yellow & Large & Irregular &  Yes  \\ \hline
+\end{tabular}%
+}
+\caption{Mushroom data with 16 instances, three categorical features, and binary labels.}
+\label{tab:adaboost}
+\end{table}
+
+\begin{enumerate}
+\item Assume we choose the following decision stump $f_1$ (a shallow tree with a single decision node), as the first predictor (i.e., when training instances are weighted uniformly):\\\\
+    \textsf{
+    if(Color is Yellow):\\
+        \hspace*{5mm}  predict Edible = Yes\\
+    else:\\
+        \hspace*{5mm}  predict Edible = No\\\\
+    }
+    What would be the weight of $f_1$ in final ensemble classifier (i.e., $\alpha_1$ in $f(\bm{x}) = \sum_{i=1}^{K} \alpha_{i}f_{i}(\bm{x})$)?
+    \item After computing $f_1$, we proceed to next round of AdaBoost. We begin by recomputing data weights depending on the error of $f_1$ and whether a point was (mis)classified by $f_1$. What is the weight of each instance in second boosting iteration, i.e., after the points have been re-weighted? Please note that the weights across the training set are to be uniformly initialized.
+    \item In AdaBoost, would you stop the iteration if the error rate of the current weak classifier on the weighted training data is 0?
+\end{enumerate}
+\end{problem}
+
+\section*{Experiment with non-linear classifiers}
+
+\begin{problem}[2] [40 points]
+For this problem, you will need to learn to use software libraries for the following non-linear classifier types:
+\begin{itemize}
+  \item Boosted Decision Trees (i.e., boosting with decision trees as weak learner)
+  \item Random Forests
+  \item Support Vector Machines with Gaussian Kernel
+\end{itemize}
+
+All of these are available in \textsf{scikit-learn}, although you may also use other external libraries (e.g., \textsf{XGBoost} \footnote{A simple blog post on how to use XGBoost please check \href{https://machinelearningmastery.com/develop-first-xgboost-model-python-scikit-learn/}{this}.} for boosted decision trees and \textsf{LibSVM} for SVMs). You are welcome to implement learning algorithms for these classifiers yourself, but this is neither required nor recommended.
+
+Use the non-linear classifiers from above for classification of Adult dataset. You can download the data from \href{https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html}{a9a} in libSVM data repository. The a9a data set comes with two files: the training data file \textsf{a9a} with 32,561 samples each with 123 features, and \textsf{a9a.t} with 16,281 test samples. Note that a9a data is in LibSVM format. In this format, each line takes the form \textsf{\textlangle{}label\textrangle{} \textlangle{}feature-id\textrangle{}:\textlangle{}feature-value\textrangle{} \textlangle{}feature-id\textrangle{}:\textlangle{}feature-value\textrangle{}} ..... This format is especially suitable for sparse datasets. Note that \textsf{scikit-learn} includes utility functions (e.g., \textsf{load\_svmlight\_file}) for loading datasets in the LibSVM format.
+
+For each of learning algorithms, you will need to set various hyperparameters (e.g., the type of kernel and regularization parameter for SVM; tree method, max depth, number of weak classifiers, etc for XGBoost; number of estimators and min impurity decrease for Random Forests). Often there are defaults that make a good starting point, but you may need to adjust at least some of them to get good performance. Use hold-out validation or K-fold cross-validation to do this (\textsf{scikit-learn} has nice features to accomplish this, e.g., you may use \textsf{train\_test\_split} to split data into train and test data and \textsf{sklearn.model\_selection} for K-fold cross validation). Do \textbf{not} make any hyperparameter choices (or any other similar choices) based on the test set! You should only compute the test error rates after you have settled on hyperparameter settings and trained your three final classifiers.
+
+What to submit (in PDF file and Jupyter/python codes):
+\begin{enumerate}
+    \item A brief description of each algorithm and how it works.
+    \item Description of your training methodology, with enough details so that another machine learning enthusiast can reproduce the your results. You need to submit all the codes (python and Jupyter notebooks) to reproduce your code. Please use prefix \textsf{Problem2*.py} where you need to replace \textsf{*} with the name of non-linear classifier for your coding files.
+    \item The list of hyperparameters and brief description of each hyperparameter you tuned in training, their default values, and the final hyperparameter settings you use to get the best result.
+    \item Training error rates, hold-out or cross-validation error rates, and test error rates for your final classifiers. You are also encouraged to report other settings you tried with the accuracy it achieved (please make a table with a column with each hyperparamter and accuracy of configuration of parameters).
+    \item Please do your best to obtain the best achievable accuracy for each classifier on given dataset. \textbf{Note: The amount of effort you put on tuning the parameters will be determined based on the discrepancy between the accuracy you get and the best achievable accuracy on a9a data for each algorithm.}
+\end{enumerate}
+
+Parameters to be tuned for XGBoost:
+\begin{enumerate}
+    \item \textsf{n\_estimators}
+    \item \textsf{max\_depth}
+    \item \textsf{lambda}
+    \item \textsf{learning\_rate}
+    \item \textsf{missing}
+    \item \textsf{objective}
+\end{enumerate}
+
+Parameters to be tuned for SVM:
+\begin{enumerate}
+    \item \textsf{kernel\_type}
+    \item \textsf{gamma}
+    \item \textsf{C}
+\end{enumerate}
+
+Parameters to be tuned for Random Forests:
+\begin{enumerate}
+    \item \textsf{n\_estimators}
+    \item \textsf{bootstrap}
+    \item \textsf{max\_depth}
+    \item \textsf{min\_impurity\_decrease}
+    \item \textsf{min\_samples\_leaf}
+\end{enumerate}
+
+\iffalse
+\subsection*{Example code to use XGBoost}
+\small{
+\begin{minted}{python}
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.datasets import load_svmlight_file
+from xgboost import XGBClassifier
+# load data in LibSVM sparse data format
+X, y = load_svmlight_file("a9a")
+# split data into train and test sets
+seed = 6
+test_size = 0.4
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=seed)
+# fit model on training data
+# for simplicity we fit based on default values of hyperparameters
+model = XGBClassifier()
+model.fit(X_train, y_train)
+# make predictions for test data
+y_pred = model.predict(X_test)
+predictions = [round(value) for value in y_pred] # evaluate predictions
+accuracy = accuracy_score(y_test, predictions) print("Accuracy: %.2f%%" % (accuracy * 100.0))
+\end{minted}
+}
+\fi
+
+\end{problem}
+
+\section*{Clustering}
+
+\begin{problem}[3] [40 points]
+For this problem, you will implement the $k$-means++ algorithm in Python. You will then use it to cluster \href{https://archive.ics.uci.edu/ml/datasets/iris}{Iris dataset} from the UCI Machine Learning Repository. The data is contained in the \textsf{iris.data} file, while the \textsf{iris.names} file contains a description of the data. The features $\bm{x}$ are given as the first four comma-separated values in each row in the data file. The labels $y$ are the last entry in each row, but you do NOT need the class label for clustering.
+\begin{enumerate}
+    \item \textsf{sepal length} (cm)
+    \item \textsf{sepal width} (cm)
+    \item \textsf{petal length} (cm)
+    \item \textsf{petal width} (cm)
+    \item \textsf{class:} \{Iris Setosa, Iris Versicolour, Iris Virginica\}
+\end{enumerate}
+
+You need to,
+\begin{itemize}
+    \item Create a new data set with two features by computing the ratio of raw features: $\bm{x} = (x_1, x_2)$ where $x_1 = (\textsf{sepal length}/\textsf{sepal width})$ and $x_2 = (\textsf{petal length}/\textsf{petal width})$. Plot the data to observe the clusters in data by yourself (use class label to color the data points for better illustration of clusters).
+    \item Implement the $k$-means++ algorithm. You are provided with the skeleton of the code with main functions to be implemented (\textsf{Problem3.py} file in assignment directory). Submit the source code (documented!) of your implementation.
+    \item Cluster the modified Iris dataset with with two features explained above. Run your algorithm 50 times over the data with different values of clusters $k = 1,2,3,4,5$ and plot the accuracy ($x$ and $y$ axes should be the number of clusters and the clustering objective, respectively).
+    \item Based on the above plot, decide the number of final clusters and justify your answer. For the chosen number of clusters,
+    \begin{enumerate}
+        \item Create a plot showing how objective changes with number of iterations.
+        \item Create a plot with the data colored by assignment, and the cluster centers.
+    \end{enumerate}
+\end{itemize}
+\end{problem}
+
+\end{document}
