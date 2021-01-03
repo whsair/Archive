@@ -1,0 +1,101 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/30/2019 06:28:24 PM
+// Design Name: 
+// Module Name: testBench
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module testBench();
+    wire [7:0] inputPC_tb;
+    wire [31:0] inputDo_tb, outputDo_tb, inputQa_tb, inputQb_tb, eqa_tb, eqb_tb, inputImm_tb, eimm_tb;
+    wire inputWreg_tb, inputM2reg_tb, inputWmem_tb, inputAluimm_tb, regrt_tb;
+    wire ealuimm_tb;
+    wire [3:0] inputAluc_tb,ealuc_tb;
+    wire [4:0] inputReg_tb;
+    
+    wire  [7:0] outputPC_tb;
+    
+    reg clk_tb;
+    wire ewreg_tb, em2reg_tb, ewmem_tb;
+    wire mwreg_tb, mm2reg_tb, mwmem_tb;
+    wire wwreg_tb, wm2reg_tb;
+    wire [4:0] eReg_tb, mReg_tb, wReg_tb;
+    wire [31:0] er_tb, mr_tb, mdi_tb, wr_tb, wdo_tb, mdo_tb, eb_tb;
+    
+    
+    
+    PCAdder PCAdder_tb(.currentPC(outputPC_tb), .upDatedPC(inputPC_tb));
+    PCReg PCReg_tb(.inputPC(inputPC_tb), .clk(clk_tb), .outputPC(outputPC_tb));
+    instMem instMem_tb(.a(outputPC_tb), .do(inputDo_tb));
+    IF_IDReg IF_IDReg_tb(.inputDo(inputDo_tb), .clk(clk_tb), .outputDo(outputDo_tb));
+    controlUnit controlUnit_tb(.do(outputDo_tb), .regrt(regrt_tb), .wreg(inputWreg_tb), .m2reg(inputM2reg_tb), .wmem(inputWmem_tb), .aluimm(inputAluimm_tb), .aluc(inputAluc_tb));
+    rtrdMultiplier rtrdMultiplier_tb(.do(outputDo_tb), .regrt(regrt_tb), .outputReg(inputReg_tb));
+    ID_EXEReg ID_EXEReg_tb
+    (
+        .inputWreg(inputWreg_tb),
+        .inputM2reg(inputM2reg_tb),
+        .inputWmem(inputWmem_tb),
+        .inputAluimm(inputAluimm_tb),
+        .clk(clk_tb),
+        .inputAluc(inputAluc_tb),
+        .inputReg(inputReg_tb),
+        .inputQa(inputQa_tb),
+        .inputQb(inputQb_tb),
+        .inputImm(inputImm_tb),
+        .outputWreg(ewreg_tb),
+        .outputM2reg(em2reg_tb),
+        .outputWmem(ewmem_tb),
+        .outputAluimm(ealuimm_tb),
+        .outputQa(eqa_tb),
+        .outputQb(eqb_tb),
+        .outputImm(eimm_tb),
+        .outputAluc(ealuc_tb),
+        .outputReg(eReg_tb)   
+    );
+    regfile regfile_tb(.do(outputDo_tb), .qa(inputQa_tb), .qb(inputQb_tb));
+    e e_tb(.do(outputDo_tb), .extendedImm(inputImm_tb));
+    
+    
+     
+    EXE_MEM EXE_MEM_tb
+    (ewreg_tb, em2reg_tb, ewmem_tb, clk_tb, eReg_tb, er_tb, eqb_tb,
+     mwreg_tb, mm2reg_tb, mwmem_tb, mReg_tb, mr_tb, mdi_tb);
+    
+    MEM_WB MEM_WB_tb
+    (mwreg_tb, mm2reg_tb, clk_tb, mReg_tb, mr_tb, mdo_tb, wwreg_tb, wm2reg_tb, wReg_tb, wr_tb, wdo_tb);
+    
+    EaluimmMultiplexer ealuimmMultiplexer_tb
+    (ealuimm_tb, eqb_tb, eimm_tb, eb_tb);
+    
+    ALU ALU_tb
+    (ealuc_tb, eqa_tb, eb_tb, er_tb);
+    
+    Datamem Datamem_tb
+    (mr_tb, mdi_tb, mwmem_tb, mdo_tb);
+    
+    initial begin
+        clk_tb <= 1;
+    end
+    
+    always begin
+        #1 clk_tb <= ~clk_tb;
+    end
+   
+    
+    
+endmodule
