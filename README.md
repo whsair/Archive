@@ -10,7 +10,7 @@
 ##### **Courses | Interns | Research**
 
 ## ***Research***
-   1. [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](CMPEN%20331%20Spring%202019%20Computer%20Organization%20and%20Design)
+   1. [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](Summer%202020%20Learning%20Factory%20Transforming%20Steering%20Controls%20to%20Self%20Driving)
    
    2. [_Harvard Deep Learning Online Research_](Summer%202020%20Intro%20to%20Deep%20Learning)
 ## ***Interns***
