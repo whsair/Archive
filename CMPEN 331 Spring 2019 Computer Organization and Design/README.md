@@ -19,4 +19,4 @@ By the end of the semester, successful student will be expected to Identify/Reco
 - Memory Hierarchy
 - Storage and I/O devices
 
-
+![plot](gpu.PNG)
