@@ -31,11 +31,10 @@
    - Others  (Theoretical Courses or only including the Final Project)
    
      - [_CMPSC 465 Spring 2020 Data Structures and Algorithms_](Others/CMPSC%20465%20Spring%202020%20Data%20Structures%20and%20Algorithms)
-   
-     - [_CMPSC 221 Spring 2019 Object Oriented Programming with Web-Based Applications_](Others/CMPSC%20221%20Spring%202019%20Object%20Oriented%20Programming%20with%20Web-Based%20Applications)
      
      - [_CMPSC 461 Fall 2019 Programming Language Concepts_](Others/CMPSC%20461%20Fall%202019%20Programming%20Language%20Concepts)
      
+     - [_CMPSC 221 Spring 2019 Object Oriented Programming with Web-Based Applications_](Others/CMPSC%20221%20Spring%202019%20Object%20Oriented%20Programming%20with%20Web-Based%20Applications)
      
    
    
