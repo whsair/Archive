@@ -4,7 +4,7 @@
 
 > _Including:  (**2019~2021**)_
 >  - _only the coding parts of projects and assginments_
->  - _data & reports of interns & research_
+>  - _data & reports_
 
 
 ##### **Courses | Interns | Research**
