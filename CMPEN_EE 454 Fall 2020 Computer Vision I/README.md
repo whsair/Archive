@@ -22,5 +22,5 @@ Lecture 24 and run them on short video sequences. As described (and pseudocoded)
 - Adaptive Background Subtraction
 - Persistent Frame Differencing
 
-##### Results:
+##### [Results](Project3_four%20simple%20motion%20detection/Team_(member%20%231%20Li)_(member%20%232%20Mao)_(member%20%233%20Wang)_(member%20%234%20Chen).mp4)
 - ![Output sample](result.gif)
