@@ -16,7 +16,7 @@
 ## ***Interns***
    1. [_Data Processing Department, Juhe Data, Suzhou, CHN_](Others/Summer%202019%20JuHe%20Data%20Interns/datasets%20and%20schedules)
 ## ***Courses***
-   1. [_CMPEN/E 454 Fall 2020 Computer Vision I_](CMPEN_EE%20454%20Fall%202020%20Computer%20Vision%20I)
+   1. [_CMPEN/EE 454 Fall 2020 Computer Vision I_](CMPEN_EE%20454%20Fall%202020%20Computer%20Vision%20I)
    
    2. [_CMPSC 448 Fall 2020 Machine Learning and Algorithmic AI_](CMPSC%20448%20Fall%202020%20Machine%20Learning%20and%20Algorithmic%20AI)
    
