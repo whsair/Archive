@@ -2,7 +2,7 @@
 
 -	Primarily understood the applications of Python in data processing
 -	Took responsibility for performing data mining and data cleansing with sklearn library (mainly removing outlier and nan values) and building a simplified bank credit-scoring model
-- Due to company's confidential policies, sketchy plan only (no codes) 
+- Due to company's confidential policies, sketchy plan & navie data only (no codes) 
 # data mining schedule
 ---
 ## 1. 数据预处理
