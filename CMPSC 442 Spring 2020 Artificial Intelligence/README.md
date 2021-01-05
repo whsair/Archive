@@ -40,7 +40,7 @@ In this section, you will develop a hidden Markov model for part-of-speech (POS)
 
 ## [HW7](hw7.py)
 ### Sudoku
-In the game of Sudoku, you are given a partially-filled 9 x 9 grid, grouped into a 3 x 3 grid of 3 x 3blocks. The objective is to fill each square with a digit from 1 to 9, subject to the requirement thateach row, column, and block must contain each digit exactly once.In this section, you will implement the AC-3 constraint satisfaction algorithm for Sudoku, alongwith two extensions that will combine to form a complete and efficient solver.
+In the game of Sudoku, you are given a partially-filled 9 x 9 grid, grouped into a 3 x 3 grid of 3 x 3blocks. The objective is to fill each square with a digit from 1 to 9, subject to the requirement thateach row, column, and block must contain each digit exactly once.In this section, you will implement the **AC-3 constraint satisfaction** algorithm for Sudoku, alongwith two extensions that will combine to form a complete and efficient solver.
 
 ![plot](442book.PNG)
 
