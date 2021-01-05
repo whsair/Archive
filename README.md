@@ -20,7 +20,7 @@
    
    2. [_CMPSC 448 Fall 2020 Machine Learning and Algorithmic AI_](CMPSC%20448%20Fall%202020%20Machine%20Learning%20and%20Algorithmic%20AI)
    
-   3. [_MATH 484 Fall 2020 Linear Programs_](MATH%20484%20Fall%202020%20Linear%20Programs)
+   3. [_MATH 484 Fall 2020 Linear Programs and Related Problems_](MATH%20484%20Fall%202020%20Linear%20Programs)
    
    4. [_CMPSC 442 Spring 2020 Artificial Intelligence_](CMPSC%20442%20Spring%202020%20Artificial%20Intelligence)
    
