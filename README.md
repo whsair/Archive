@@ -10,9 +10,9 @@
 ##### **Courses | Interns | Research**
 
 ## ***Research***
-   1. [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](Summer%202020%20Learning%20Factory%20Transforming%20Steering%20Controls%20to%20Self%20Driving)
+   1. [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](https://github.com/whsair/Summer-2020-Learning-Factory-Transforming-Steering-Controls-to-Self-Driving)
    
-   2. [_Harvard Deep Learning Online Research_](Summer%202020%20Intro%20to%20Deep%20Learning)
+   2. [_Harvard Deep Learning Online Research_](https://github.com/whsair/Summer-2020-Harvard-Deep-Learning-Online-Research-Intro-to-Deep-Learning)
 ## ***Interns***
    1. [_Data Processing Department, Juhe Data, Suzhou, CHN_](Others/Summer%202019%20JuHe%20Data%20Interns/datasets%20and%20schedules)
 ## ***Courses***
