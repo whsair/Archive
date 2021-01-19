@@ -8,4 +8,4 @@ Introduction, asymptotic notation, recurrences, divide-and-conquer, dynamic prog
 
 ## Extra points
 ### Rosalind Problems
-![plot](465extra1.PNG) | ![plot](465extra2.PNG)
+![plot](465extra1.PNG)  ![plot](465extra2.PNG)
