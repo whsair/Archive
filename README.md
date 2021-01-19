@@ -47,3 +47,5 @@
      - CMPSC 483W Spring 2021 Software Design Methods
      
      - MATH 450 Spring 2021 Mathematical Modeling
+     
+     - CMPEN 482W Spring 2021 Computer Engineering Project Design Visual/AI sense amp avoid system design for Group 1-3 UAVs
