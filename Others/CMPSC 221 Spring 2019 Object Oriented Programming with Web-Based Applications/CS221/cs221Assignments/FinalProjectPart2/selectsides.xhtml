@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- selectsides.xhtml -->
+<!-- Registration form that demonstrates various JSF components -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <h:head>
+      <title>Select Your Sides</title>
+   </h:head>
+   <h:body>
+      <h:form>
+         <h1>Select your Sides</h1>
+         <h:selectOneRadio id="sidesSelectOneRadio" required="true"
+                           requiredMessage="Please choose a side, write the quantity below, then press Submit"
+                           value="#{pizzaBean.sides}">
+            <f:selectItem itemValue="cheesesticks" itemLabel="Cheesesticks"/> 
+            <f:selectItem itemValue="buffaloWings" itemLabel="Buffalo Wings"/>
+         </h:selectOneRadio>
+         <h:panelGrid columns="2">
+            <h:graphicImage name="cheesestick.jpg" library="images"/>
+            <h:graphicImage name="buffalowing.jpg" library="images"/>
+         </h:panelGrid>
+         <h:panelGrid columns="3">
+            <h:outputText value="Sides Quantity:"/>
+            <h:inputText id="sidesQuantityInputText" required="true"
+                         requiredMessage="Please enter the quantity of your sides"
+                         value="#{pizzaBean.sidesQuantity}"
+                         validatorMessage="You must type a integer"
+                         converter="javax.faces.Integer">
+               <f:validateLength maximum="10" />
+            </h:inputText>
+            <h:message for="sidesQuantityInputText" styleClass="error"/>
+         </h:panelGrid>
+         <p><h:commandButton value="Next Step: select your drinks" action="selectdrink"/></p>
+      </h:form>
+   </h:body>
+</html>

@@ -1,0 +1,44 @@
+Examples of Plagiarism
+This page provides several examples of plagiarism.
+
+Paraphrasing Plagiarism
+Definition
+Failure to adequately cite the rewording of another person's original text is paraphrasing plagiarism. This type of plagiarism arises when you change the words, but you still present another person's concepts as your own. 
+
+Example
+Original Source:
+
+No oil spill is entirely benign. Depending on timing and location, even a relatively minor spill can cause significant harm to individual organisms and entire populations. Oil spills can cause impacts over a range of time scales, from days to years, or even decades for certain spills. Impacts are typically divided into acute (short-term) and chronic (long-term) effects. Both types are part of a complicated and often controversial equation that is addressed after an oil spill: ecosystem recovery.
+
+(2010). Impact of oil spills. Congressional Digest, 89(6):167-192
+
+Plagiarized Source: 
+
+There is no such thing as a "good" oil spill. If the time and place are just right, even a small oil spill can cause damage to sensitive ecosystems. Further, spills can cause harm days, months, years, or even decades after they occur. Because of this, spills are usually broken into short-term (acute) and long-term (chronic) effects. Both of these types of harm must be addressed in ecosystem recovery: a controversial tactic that is often implemented immediately following an oil spill.
+
+Notice that the plagiarizing author changed the wording, but the concepts are exactly the same as in the original text.
+
+Solution
+When paraphrasing another author, be sure to include the proper citation. Paraphrasing is a great way to summarize a long work or to make a complicated piece of text more accessible, but if you do not cite your source, you are in danger of plagiarizing. 
+
+Word-for-Word Plagiarism
+Definition
+Copying another person's work exactly and presenting it as your own (without attributing it to the original author).
+
+Example
+Original Source:
+
+Descartes has been heralded as the first modern philosopher. He is famous for having made an important connection between geometry and algebra, which allowed for the solving of geometrical problems by way of algebraic equations. He is also famous for having promoted a new conception of matter, which allowed for the accounting of physical phenomena by way of mechanical explanations. However, he is most famous for having written a relatively short work, Meditationes de Prima Philosophia (Meditations On First Philosophy), published in 1641, in which he provides a philosophical groundwork for the possibility of the sciences. (Smith, 2007).
+
+Smith, K. (2007). Descartes' life and work. In The Stanford Encyclopedia of Philosophy. retrieved July 12, 2010 at http://plato.stanford.edu/entries/descartes-works/
+
+Plagiarized Source:
+
+Descartes is famous for being the first modern philosopher. He promoted a new concept of matter which allowed for the accounting of physical phenomena by way of mechanical explanations and an important connection between geometry and algebra, which allowed for the solving of geometrical problems by way of algebraic equations. However, he is best known for having written Meditations On First Philosophy, published in 1641, in which he provides a philosophical groundwork for the possibility of the sciences.
+
+Smith, K. (2007). Descartes' life and work. In The Stanford Encyclopedia of Philosophy. retrieved July 12, 2010 at http://plato.stanford.edu/entries/descartes-works/
+
+Notice that, even though there is a reference at the end, and the sentences have been rearranged, the plagiarized version has used exactly the same wording as the original.
+
+Solution
+The student author needs to enclose the quoted passages in quotation marks and include citations in the text (parenthetical documentation).

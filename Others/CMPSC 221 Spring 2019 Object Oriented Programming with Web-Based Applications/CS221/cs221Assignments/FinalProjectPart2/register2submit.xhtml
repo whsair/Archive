@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- register2submit.html -->
+<!-- Form for adding an order to table -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <h:head>
+      <title>Register and Submit your Order</title>
+      <h:outputStylesheet name="style.css" library="css"/>
+   </h:head>
+   <h:body>
+      <h1>Register and Submit your Order</h1>
+      <h:form>
+         <h:panelGrid columns="3">
+            <h:outputText value="First name:"/>
+            <h:inputText id="firstNameInputText" required="true"
+                         requiredMessage="Please enter first name"
+                         value="#{pizzaBean.firstName}" maxlength="30">
+            </h:inputText>
+            <h:message for="firstNameInputText" styleClass="error"/>
+            <h:outputText value="Last name:"/>
+            <h:inputText id="lastNameInputText" required="true"
+                         requiredMessage="Please enter last name"
+                         value="#{pizzaBean.lastName}" maxlength="30">
+            </h:inputText>
+            <h:message for="lastNameInputText" styleClass="error"/>
+            <h:outputText value="Phone Number:"/>
+            <h:inputText id="phoneInputText" required="true"
+                         requiredMessage="Please enter a valid phone number"
+                         value="#{pizzaBean.phoneNumber}"
+                         validatorMessage="Invalid phone number format">
+               <f:validateRegex pattern=
+                                "((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" />
+            </h:inputText>
+            <h:message for="phoneInputText" styleClass="error"/>
+            <h:outputText value="Email Address:"/>
+            <h:inputText id="emailInputText" required="false"
+                         value="#{pizzaBean.emailAddress}"
+                         validatorMessage="Invalid e-mail address format">
+               <f:validateRegex pattern=
+                                "(.+@.+\.[a-zA-Z]+)?" />
+            </h:inputText>
+            <h:message for="emailInputText" styleClass="error"/>
+         </h:panelGrid>
+         <p><h:commandButton value="Place Your Order" action="#{pizzaBean.save}"/></p>
+         <p><h:commandButton value="Return to Homepage" action="index"/></p>
+      </h:form>
+   </h:body>
+</html>
