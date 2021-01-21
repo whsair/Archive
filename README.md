@@ -36,6 +36,8 @@
      
      - [_CMPSC 221 Spring 2019 Object Oriented Programming with Web-Based Applications_](Others/CMPSC%20221%20Spring%202019%20Object%20Oriented%20Programming%20with%20Web-Based%20Applications)
      
+     - [_MATH 415 Spring 2020 Introduction to Mathematical Statistics_](Others/MATH%20415%20Spring%202020%20Introduction%20to%20Mathematical%20Statistics)
+     
    
    
    - Spring 2021 (Next Semester)
