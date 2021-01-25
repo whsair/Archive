@@ -40,7 +40,7 @@
      
    
    
-   - Spring 2021 (Next Semester)
+   - Spring 2021
    
      - CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation
      
@@ -50,4 +50,4 @@
      
      - MATH 450 Spring 2021 Mathematical Modeling
      
-     - CMPEN 482W Spring 2021 Computer Engineering Project Design Visual/AI sense amp avoid system design for Group 1-3 UAVs
+     - CMPEN 482W Spring 2021 Computer Engineering Project Design: Visual/AI sense amp avoid system design for Group 1-3 UAVs
