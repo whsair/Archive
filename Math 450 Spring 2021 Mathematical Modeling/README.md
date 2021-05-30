@@ -14,8 +14,14 @@ We will aim to discuss these topics, but other interesting nuggets may also pop 
 - Newtonian mechanics
 - If there’s time: spatial modeling
 
+## [Final Project](Final%20Project)
+### The Mystery Of The Namibian Fairy Circles
 
-## [hw1](hw1)
+- In southern Africa, Namib Desert, the so-called “fairy circle” is a barren small circle surrounded by vegetation, ranging from 10 to 65 feet in diameter and stretching for hundreds of miles. In this Project, we are trying to make assumptions and create a reasonable math model to simulate the appearance of "Fairy Circle".
+
+- ![Simulation](output.gif)
+
+## [hw1](Final%20Project)
 ### Numbers, Spherical trig, and Linkages
 
 
