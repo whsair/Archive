@@ -33,7 +33,7 @@
 
    7. [_CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation_]
 
-   8. [_MATH 450 Spring 2021 Mathematical Modeling_](Math%20450%20Spring%202021%20Mathematical%20Modeling/README.md)
+   8. [_MATH 450 Spring 2021 Mathematical Modeling_](Math%20450%20Spring%202021%20Mathematical%20Modeling)
 
    9. [_CMPEN 482W Spring 2021_]
 
