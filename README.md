@@ -13,6 +13,8 @@
    1. [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](https://github.com/whsair/Summer-2020-Learning-Factory-Transforming-Steering-Controls-to-Self-Driving)
    
    2. [_Harvard Deep Learning Online Research_](https://github.com/whsair/Summer-2020-Harvard-Deep-Learning-Online-Research-Intro-to-Deep-Learning)
+
+   3. [_Image Processing in BME using Deep Learning_]
 ## ***Interns***
    1. [_Data Processing Department, Juhe Data, Suzhou, CHN_](Others/Summer%202019%20JuHe%20Data%20Interns/datasets%20and%20schedules)
 ## ***Courses***
@@ -27,6 +29,14 @@
    5. [_CMPSC 311 Fall 2019 Intro to Systems Programming_](CMPSC%20311%20Fall%202019%20Intro%20to%20Systems%20Programming)
    
    6. [_CMPEN 331 Spring 2019 Computer Organization and Design_](CMPEN%20331%20Spring%202019%20Computer%20Organization%20and%20Design)
+
+   7. [_CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation_]
+
+   8. [_MATH 450 Spring 2021 Mathematical Modeling_]
+
+   9. [_CMPEN 482W Spring 2021_]
+
+   10. [_CMPSC 473 Spring 2021 Operating System_]
    
    - Others  (Theoretical Courses or only including the Final Project)
    
@@ -39,15 +49,4 @@
      - [_MATH 415 Spring 2020 Introduction to Mathematical Statistics_](Others/MATH%20415%20Spring%202020%20Introduction%20to%20Mathematical%20Statistics)
      
    
-   
-   - Spring 2021
-   
-     - CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation
-     
-     - CMPSC 473 Spring 2021 Operating System
-     
-     - CMPSC 483W Spring 2021 Software Design Methods
-     
-     - MATH 450 Spring 2021 Mathematical Modeling
-     
-     - CMPEN 482W Spring 2021 Computer Engineering Project Design: Visual/AI sense amp avoid system design for Group 1-3 UAVs
+
