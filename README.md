@@ -3,7 +3,7 @@
 
 
 > _Including:  (**2017~2021**)_
->  - _Undergraduate in Penn State
+>  - _Undergraduate in Penn State_
 >  - _only the coding parts of projects and assginments_
 >  - _data & reports_
 
@@ -33,7 +33,7 @@
 
    7. [_CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation_]
 
-   8. [_MATH 450 Spring 2021 Mathematical Modeling_]
+   8. [_MATH 450 Spring 2021 Mathematical Modeling_](Math 450 Spring 2021 Mathematical Modeling/README.md)
 
    9. [_CMPEN 482W Spring 2021_]
 
