@@ -1,0 +1,2 @@
+#WEBOTS_MOTION,V1.0,RShoulderPitchMotor,RShoulderYawMotor,RElbowYawMotor,LShoulderPitchMotor,LShoulderYawMotor,LElbowYawMotor,RHipYawMotor,RHipPitchMotor,RKneePitchMotor,RAnklePitchMotor,RAnkleYawMotor,LHipYawMotor,LHipPitchMotor,LKneePitchMotor,LAnklePitchMotor,LAnkleYawMotor,NeckRollMotor
+00:01:000,Pose1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-1.0,0.0,0.0,0.0,0.0,-1.0,0.0,0.0,0.0

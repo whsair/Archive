@@ -1,0 +1,14 @@
+Put together a short writeup that addresses the following questions. What do you think are
+some limitations of Haar Cascade face detection? How do you think you could trick your
+face detection program? What are some potential applications of face detection?
+
+Name: Hongshuo Wang
+
+1. According to what Dr.Liu said in the lecture, Haar Cascade face detection set the region around both eyes as our key features.
+If something covers our eyes such hair, Haar Cascade face detection model acts poorly.
+
+2. Actually, I tricked with our program by using my hand to cover one of my eye then model just stopped working.
+
+3. Potential application: In the movie industry, we can potential integrate Haar Cascade face detection model with the camera
+   Moreover, in the facial recognition model, we can use Haar Cascade face detection model to get the location of the face then
+   scan the facial information, extract particular facial feature and create a unique model.
