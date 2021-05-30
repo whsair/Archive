@@ -21,7 +21,7 @@ We will aim to discuss these topics, but other interesting nuggets may also pop 
 
 ![Simulation](Final%20Project/output.gif)
 
-## [hw1](Final%20Project)
+## [hw1](hw1)
 ### Numbers, Spherical trig, and Linkages
 
 
