@@ -1,0 +1,23 @@
+#Temperature (C), flashing rate (per minute)
+#
+# Snyder and Snyder, 1920 data on 
+# @article{charles1920flashing,
+#   title={THE FLASHING INTERVAL OF FIREFLIES—ITS TEMPERATURE COEFFICIENT—AN EXPLANATION OF SYNCHRONOUS FLASHING},
+#   author={Charles, D and Snyder, Aleida v't H},
+#   journal={American Journal of Physiology--Legacy Content},
+#   volume={51},
+#   number={3},
+#   pages={536--542},
+#   year={1920},
+#   publisher={Am Physiological Soc}
+# }
+#
+19.4,8.1
+22.3,9.9
+22.6,10.0
+23.2,11.1
+24.1,11.5
+26.0,12.6
+26.5,12.1
+28.3,15.0
+28.8,15.4

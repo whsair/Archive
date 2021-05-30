@@ -1,0 +1,62 @@
+# year, maximum rainfall in one day (mm)
+#
+# Annual maximum daily rainfall for Uccle (Brussels, Belgium) for
+# the 50-year period 1934-1983 measured in millimeters.
+#
+# @book{demaree1985intensity,
+#   title={Intensity-duration-frequency Relationship of Point Precipitation at Uccle: Reference Period 1934-1983},
+#   author={Demar{\'e}e, Gaston R},
+#   year={1985},
+#   publisher={Institut Royal M{\'e}t{\'e}orologique de Belgique}
+#   url={https://books.google.com/books/about/Intensity_duration_frequency_Relationshi.html?id=5dectgAACAAJ}
+# }
+1934,23.9
+1935,37.6
+1936,23.8
+1937,29.2
+1938,33.9
+1939,37.7
+1940,60.1
+1941,30.9
+1942,72.1
+1943,51.4
+1944,24.2
+1945,46.9
+1946,26.6
+1947,29.3
+1948,29.5
+1949,19.8
+1950,39.0
+1951,43.0
+1952,51.1
+1953,39.2
+1954,31.7
+1955,23.0
+1956,34.6
+1957,37.7
+1958,42.9
+1959,30.8
+1960,48.0
+1961,32.2
+1962,58.6
+1963,78.3
+1964,43.0
+1965,48.4
+1966,39.3
+1967,23.9
+1968,26.0
+1969,52.9
+1970,29.2
+1971,45.7
+1972,28.6
+1973,30.0
+1974,30.7
+1975,25.8
+1976,33.0
+1977,26.3
+1978,49.2
+1979,33.6
+1980,38.2
+1981,56.8
+1982,50.1
+1983,24.2

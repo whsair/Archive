@@ -1,0 +1,20 @@
+# observations of Acetaminophen concentration in the blood
+# over 8 hours, following a 1000 mg dose (2 extra strength 500mg caplets)
+# http://images.rxlist.com/images/rxlist/apap2.gif
+#
+# time (hours), plasma concentration (mmg/ml)
+#
+0.001, 0.001
+0.170, 2.965
+0.292, 11.65
+0.463, 14.75
+0.682, 15.10
+0.829, 13.03
+1.000, 11.51
+1.146, 10.82
+1.341, 10.27
+1.487, 9.655
+2.000, 8.00
+4.000, 4.55
+6.000, 2.34
+8.000, 1.31

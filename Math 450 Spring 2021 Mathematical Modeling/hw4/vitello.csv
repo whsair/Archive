@@ -1,0 +1,19 @@
+# angle-of-incidence (deg),angle-of-refraction (deg)
+#
+# Witelo's (aka Vitello) experimental data on the refraction angle at
+# the air/glass boundary from *Optica*, extracted from
+# http://opticalengineering.spiedigitallibrary.org/data/journals/optice/23437/121704_1_4.png by g3data
+# all angles are measured in degrees
+#
+# Warning: These numbers have not been double-checked against the original manuscript.  Apply with caution.
+#
+79.97,42.11
+70.07,38.58
+60.17,34.56
+50.12,30.04
+40.07,25.04
+30.02,19.54
+20.11,13.54
+10.05,07.06
+00.00,00.00
+

@@ -1,0 +1,46 @@
+# VW 65% (mm), VW 60% (mm),TBL(mm),SVL(mm)
+# 		These are the data column headings ..
+#
+# Extant snake data used to estimate Titanoboa's TBL and SVL
+#	VW = (V)ertabral (W)idth at a fixed precentage done spine
+#	TBL = (t)otal (b)ody (l)ength
+#	SVL = (s)nout (v)ent (l)ength
+# 
+# @article{bib:Head2009,
+#  	title={Giant boid snake from the Palaeocene neotropics reveals hotter past equatorial temperatures},
+# 	volume={457},
+# 	ISSN={1476-4687},
+# 	url={http://dx.doi.org/10.1038/nature07671},
+# 	DOI={10.1038/nature07671},
+# 	number={7230},
+# 	journal={Nature},
+# 	publisher={Springer Nature},
+# 	author={Head, Jason J. and Bloch, Jonathan I. and Hastings, Alexander K. and Bourque, Jason R. and Cadena, Edwin A. and Herrera, Fabiany A. and Polly, P. David and Jaramillo, Carlos A.},
+# 	year={2009},
+# 	month={Feb},
+# 	pages={715-717},
+# }
+#
+# Data extracted from Supplement, Table 2
+# 
+6.530,6.380,1535,1423
+19.04,19.66,2040,1900
+21.42,23.50,2480,2390
+12.64,12.92,1606,1355
+27.08,27.69,3220,2970
+28.01,28.20,3434,3129
+10.96,11.22,867,803
+11.80,12.20,1450,1216
+10.54,10.79,1734,1360
+17.97,17.61,2330,1960
+11.27,11.54,1380,1195
+10.22,10.65,1210,1070
+11.58,11.66,1700,1450
+10.85,11.20,1770,1385
+15.08,15.09,2250,1950
+10.66,10.80,1720,1490
+17.26,17.10,2470,2110
+23.99,24.32,3320,2910
+17.24,17.67,2510,2190
+23.12,24.33,2690,2310
+15.69,16.15,1760,1610
