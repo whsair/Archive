@@ -39,7 +39,7 @@
 
    10. _CMPSC 473 Spring 2021 Operating System_
    
-   - Others  (Theoretical Courses or only including the Final Project)
+   - Others  (Theoretical Courses or only including Final Projects)
    
      - [_CMPSC 465 Spring 2020 Data Structures and Algorithms_](Others/CMPSC%20465%20Spring%202020%20Data%20Structures%20and%20Algorithms)
      
