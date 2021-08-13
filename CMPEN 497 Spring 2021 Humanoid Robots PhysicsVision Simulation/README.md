@@ -36,7 +36,7 @@ Robot Planning
 
 
 ## Project4
-- n this project, you will put your knowledge about humanoid robots and stability to use.You will be creating an original dance that meets a certain set of specifications (listed laterin the document) and running stability analysis on it.  In addition, you will have to presentyour approach to this project in class.  We will also be seeing if your dance behaves properlyon the physical robot.
+- In this project, you will put your knowledge about humanoid robots and stability to use.You will be creating an original dance that meets a certain set of specifications (listed laterin the document) and running stability analysis on it.  In addition, you will have to presentyour approach to this project in class.  We will also be seeing if your dance behaves properlyon the physical robot.
 
 ![](project4.gif)
 
