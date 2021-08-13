@@ -12,7 +12,7 @@ We will aim to discuss these topics, but other interesting nuggets may also pop 
 - Differential equation models
 - Markov chain models and stochastic simulation
 - Newtonian mechanics
-- If there’s time: spatial modeling
+- Spatial modeling
 
 ## [Final Project](Final%20Project)
 ### The Mystery Of The Namibian Fairy Circles
