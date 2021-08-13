@@ -1,17 +1,17 @@
 # CMPEN 497 Spring 2021 Humanoid Robots PhysicsVision Simulation
+#### Instructor: Dr. Yanxi Liu (Professor of CSE and EE) &  Dr. Robert Collins (Associate Professor of CSE)
 
 
 
-
-Course Goals and Objectives:
-Learn fundamentals of humanoid robot simulation including the following topics:
-3D geometry and camera models
-3D modeling
-Kinematics and dynamics
-Stability
-Simulation software
-Computer vision
-Robot Planning
+## Course Goals and Objectives:
+### Learn fundamentals of humanoid robot simulation including the following topics:
+- 3D geometry and camera models
+- 3D modeling
+- Kinematics and dynamics
+- Stability
+- Simulation software
+- Computer vision
+- Robot Planning
 
 ## Project1
 - RobotDuring  Summer  2019,  Dr.   Liu  and  members  ofthe LPAC lab led a robotics cap for middle school stu-dents:Dancing with Robots.  During this camp,students  used  UBTECH  Yanshee  robots.   They  areprogrammable,  open-source  robots  that  have  17  de-grees of freedom and an on-board Raspberry Pi com-puter.Due to the remote nature of this course, you willnot be able to work on the physical robots.  We will beproviding videos of the robot dancing so you can getan idea of how the robot moves.  It has three degreesof freedom in each of its arms,  five in each leg,  andone where its head meets its torso.The goal of this project is to create a 3D model ofthis robot and test its stability when it is in a varietyof different poses and environments.  One purpose ofthis project is to give you experience using a 3D mod-eling and physics simulation tool while giving you anunderstanding of what’s going on behind the scenesof some other simulation tools.
