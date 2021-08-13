@@ -38,7 +38,7 @@
 
    8. [_MATH 450 Spring 2021 Mathematical Modeling_](Math%20450%20Spring%202021%20Mathematical%20Modeling)
 
-   9. [_CMPEN 482W Spring 2021_Computer Engineering Project Design](https://github.com/whsair/Wearable-Multimodal-Team-1)
+   9. [_CMPEN 482W Spring 2021_Computer Engineering Project Design_](https://github.com/whsair/Wearable-Multimodal-Team-1)
 
    10. _CMPSC 473 Spring 2021 Operating System_
    
