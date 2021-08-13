@@ -16,6 +16,9 @@
    2. [_Harvard Deep Learning Online Research_](https://github.com/whsair/Summer-2020-Harvard-Deep-Learning-Online-Research-Intro-to-Deep-Learning)
 
    3. [_Wearable Multimodal Optical and Acoustic Sensing of Physiological Parameters in Autoencoder_](https://github.com/whsair/Wearable-Multimodal-Optical-and-Acoustic-Sensing-of-Physiological-Parameters-Autoencoder-)
+   
+   4. [_Artifact reduction in LED-based photoacoustic imaging using deep learning in U-net_]
+
 ## ***Interns***
    1. [_Data Processing Department, Juhe Data, Suzhou, CHN_](Others/Summer%202019%20JuHe%20Data%20Interns/datasets%20and%20schedules)
 ## ***Courses***
