@@ -31,7 +31,7 @@
    
    6. [_CMPEN 331 Spring 2019 Computer Organization and Design_](CMPEN%20331%20Spring%202019%20Computer%20Organization%20and%20Design)
 
-   7. [_CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation_]
+   7. [_CMPEN 497 Spring 2021 Humanoid Robots Physics/Vision Simulation_](https://github.com/whsair/Archive/tree/main/CMPEN%20497%20Spring%202021%20Humanoid%20Robots%20PhysicsVision%20Simulation)
 
    8. [_MATH 450 Spring 2021 Mathematical Modeling_](Math%20450%20Spring%202021%20Mathematical%20Modeling)
 
