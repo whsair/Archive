@@ -21,6 +21,7 @@
 
 ## ***Interns***
    1. [_Data Processing Department, Juhe Data, Suzhou, CHN_](Others/Summer%202019%20JuHe%20Data%20Interns/datasets%20and%20schedules)
+   2. Machine Vision Algorithms Intern in R&D Department, ECOVACS, Suzhou, CHN
 ## ***Courses***
    1. [_CMPEN/EE 454 Fall 2020 Computer Vision I_](CMPEN_EE%20454%20Fall%202020%20Computer%20Vision%20I)
    
