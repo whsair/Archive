@@ -11,13 +11,13 @@
 ##### **Courses | Interns | Research**
 
 ## ***Research***
-   1. [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](https://github.com/whsair/Summer-2020-Learning-Factory-Transforming-Steering-Controls-to-Self-Driving)
+   - [_Learning Factory: Transforming Steering Controls to Self-driving, Penn State_](https://github.com/whsair/Summer-2020-Learning-Factory-Transforming-Steering-Controls-to-Self-Driving)
    
-   2. [_Harvard Deep Learning Online Research_](https://github.com/whsair/Summer-2020-Harvard-Deep-Learning-Online-Research-Intro-to-Deep-Learning)
-   - Biophotonics and Ultrasound Imaging Laboratory  
-      3. [_Wearable Multimodal Optical and Acoustic Sensing of Physiological Parameters in Autoencoder_](https://github.com/whsair/Wearable-Multimodal-Optical-and-Acoustic-Sensing-of-Physiological-Parameters-Autoencoder-)
+   - [_Harvard Deep Learning Online Research_](https://github.com/whsair/Summer-2020-Harvard-Deep-Learning-Online-Research-Intro-to-Deep-Learning)
+   - _Biophotonics and Ultrasound Imaging Laboratory_  
+      - [_Wearable Multimodal Optical and Acoustic Sensing of Physiological Parameters in Autoencoder_](https://github.com/whsair/Wearable-Multimodal-Optical-and-Acoustic-Sensing-of-Physiological-Parameters-Autoencoder-)
    
-      4. [_Artifact reduction in LED-based photoacoustic imaging using deep learning in U-net_](https://github.com/whsair/Artifact-reduction-in-LED-based-photoacoustic-imaging-using-deep-learning-in-U-net)
+      - [_Artifact reduction in LED-based photoacoustic imaging using deep learning in U-net_](https://github.com/whsair/Artifact-reduction-in-LED-based-photoacoustic-imaging-using-deep-learning-in-U-net)
 
 ## ***Interns***
    1. [_Data Processing Department, Juhe Data, Suzhou, CHN_](Others/Summer%202019%20JuHe%20Data%20Interns/datasets%20and%20schedules)
