@@ -3,6 +3,7 @@
 
 
 > _Including:  (**2017~2021**)_
+>  - _MSCS in UIUC_
 >  - _Undergraduate in Penn State_
 >  - _only the coding parts of projects and assginments_
 >  - _data & reports_
