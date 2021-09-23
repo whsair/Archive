@@ -2,7 +2,7 @@
 
 
 
-> _Including:  (**2017~2021**)_
+> _Including:  (**2017~2022**)_
 >  - _MSCS in UIUC_
 >  - _Undergraduate in Penn State_
 >  - _only the coding parts of projects and assginments_
@@ -54,5 +54,8 @@
      
      - [_MATH 415 Spring 2020 Introduction to Mathematical Statistics_](Others/MATH%20415%20Spring%202020%20Introduction%20to%20Mathematical%20Statistics)
      
-   
+     - CS 412 Fall 2021 Data Mining
 
+     - CS 543 Fall 2021 Computer Vision
+
+     - CS 441 Fall 2021 Applied Machine learning
